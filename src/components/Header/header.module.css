@@ -1,0 +1,16 @@
+* {
+    padding:0px;
+    margin:0px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 3em;
+    border-bottom: 4px solid #4bb4ff;
+}
+
+.logo {
+    max-width: 60px;
+    width: 100%;
+    
+}

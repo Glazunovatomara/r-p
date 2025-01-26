@@ -1,0 +1,26 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 200px;
+    padding: 2em;
+    justify-content: space-around;
+    border-radius: 8px;
+    border: 3px solid #4bb4ff;
+    background-color: #4bb4ff15;
+}
+
+.subtitle {
+    color: #4bb4ff;
+}
+.transcription {
+    color: #4bb4ffb7;
+}
+.invisibility {
+    display: none;
+}
+.translation {
+    padding: 0.6em 1.2em;
+    color: #4bb4ff;
+    font-weight: 600;
+}
