@@ -2,17 +2,17 @@ import styles from './card.module.css';
 import { useState } from 'react';
 
 const Card = () => {
-    const [state,setChange] = useState(0)
+    const [state,setChange] = useState('false')
 
     let btn = `${styles.btn}`
     let translation = `${styles.invisibility}`
 
     const handleClick = () =>{
-        setChange(state +1)
+        setChange('true')
     }
 
     console.log (state)
-    if (state != 0) {
+    if (state != 'false') {
         btn = `${styles.invisibility}`
         translation = `${styles.translation}`
     }
