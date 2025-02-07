@@ -1,0 +1,20 @@
+.btn_arrea {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.back, 
+.forward {
+    display: flex;
+}
+.back svg, 
+.forward svg {
+    fill:#4BB4FF;
+}
+.back svg {
+    transform: rotate(180deg);
+}
+.back:hover svg,
+.forward:hover svg {
+    fill:#ffffff;
+}
