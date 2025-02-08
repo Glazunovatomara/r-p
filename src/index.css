@@ -35,14 +35,14 @@ button {
   
 }
 button:hover {
-  border-color: #646cff;
-  background-color: #646cff;
+  border-color: #ffffff51;
+  background-color: #4bb4ff;
   color: #ffffff;
 }
 
 button:focus,
 button:focus-visible {
-    outline: 4px auto #6169fd;
+    border: 4px auto #4bb4ff;
 }
 
 
