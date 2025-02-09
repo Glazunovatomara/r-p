@@ -1,0 +1,46 @@
+.word_arrea {
+    display: flex;
+    justify-content: space-between;
+    color: #4bb4ff;
+    border: 2px solid #4bb4ff;
+}
+.number {
+    border-right:2px solid #4bb4ff;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    align-content: center;
+
+}
+.word {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border-right:2px solid #4bb4ff;
+}
+.btn_arrea {
+    display: flex;
+    gap: 10px;
+    padding: 0.4em;
+}
+p {
+    align-content: center;
+}
+.btn_delete {
+    border:2px solid #ff4b4b;
+}
+.btn_delete:hover {
+    border-color: #ffffff51;
+    background-color: #ff4b4b;
+}
+
+.btn_delete:focus,
+.btn_delete:focus-visible {
+    border: 4px auto #ff4b4b;
+}
+
+.btn_delete svg {
+    fill: #ff4b4b;
+}
+.btn_delete:hover svg {
+    fill: #ffffffd9;
+}

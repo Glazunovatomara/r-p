@@ -6,7 +6,7 @@
     border-radius: 8px;
     border: 2px solid #4bb4ff;
     padding: 0.6em 1.2em;
-    accent-color: #4bb4ff;
+    color: #4bb4ff;
     caret-color: #4bb4ff;
 
     &:focus-visible {

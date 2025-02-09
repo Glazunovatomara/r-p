@@ -1,4 +1,4 @@
-import styles from "./addWords.module.css"
+import styles from "./WordsAdd.module.css"
 
 const AddWords = () => {
     return (
@@ -6,6 +6,7 @@ const AddWords = () => {
             <input type="text" className={styles.input} placeholder="новое слово"/>
             <input type="text" className={styles.input} placeholder="транскрипция"/>
             <input type="text" className={styles.input} placeholder="перевод"/>
+            <button>Добавить</button>
         </div>
     )
 }

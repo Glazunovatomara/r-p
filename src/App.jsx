@@ -3,8 +3,9 @@ import Header from './components/Header/Header'
 import Home from './components/HomePage/Home'
 import Footer from './components/Footer/Footer'
 import CardPage from './components/CardPage/CardPage'
-import AddWords from './components/AddWords/AddWords'
-
+import WordsAdd from './components/WordsAdd/WordsAdd'
+import WordsList from './components/Words/Words'
+import Words from './components/Words/Words'
 
 
 function App() {
@@ -13,7 +14,9 @@ function App() {
     <>
     <Header/>
     <Home/>
-    <AddWords/>
+    <WordsAdd/>
+    <WordsList/>
+    <Words/>
     <CardPage/>
     <Footer/>
     </>
