@@ -9,9 +9,9 @@ const CardList = () => {
 
         return (
             <Card
-                word = {el.word}
+                english = {el.english}
                 transcription = {el.transcription}
-                translation = {el.translation}
+                russian = {el.russian}
                 index = {index}
                 key = {index}
             />

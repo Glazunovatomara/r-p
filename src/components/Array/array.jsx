@@ -1,19 +1,43 @@
 const array = [
     {
-        word:'слово 1',
+        english:'слово 1',
         transcription:' транскрипция 1',
-        translation:'перевод 1'
+        russian:'перевод 1'
     },
     {
-        word:'слово 2',
+        english:'слово 2',
         transcription:'транскрипция 2',
-        translation:'перевод 2'
+        russian:'перевод 2'
     },
     {
-        word:'слово 3',
+        english:'слово 3',
         transcription:'транскрипция 3',
-        translation:'перевод 3'
-    }
+        russian:'перевод 3'
+    },
+    {
+        "id": "33198",
+        english: "mother",
+        transcription: "[mʌðə]",
+        "russian": "мама",
+        "tags": "Family",
+        "tags_json": "[\"Family\"]"
+      },
+      {
+        "id": "33200",
+        "english": "aunt",
+        transcription: "[ænt]",
+        "russian": "тётя",
+        "tags": "Family",
+        "tags_json": "[\"Family\"]"
+      },
+      {
+        "id": "33208",
+        "english": "peace",
+        "transcription": "[piːs]",
+        "russian": "мир",
+        "tags": "World",
+        "tags_json": "[\"World\"]"
+      }
 ]
 
 export default array

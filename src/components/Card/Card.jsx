@@ -3,9 +3,9 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 
 const Card = (props) => {
-    const {word,transcription,translation,index} = props;
+    const {english,transcription,russian,index} = props;
 
-    console.log(word)
+    console.log(english)
     const [state,setChange] = useState('false')
 
     const handleClick = () =>{
@@ -25,19 +25,19 @@ const Card = (props) => {
     return (
         <div className={styles.card}>
             <div className={styles.word_section}>
-                <h2 className={styles.subtitle}>{word}</h2>
+                <h2 className={styles.subtitle}>{english}</h2>
                 <p className={styles.transcription}>[{transcription}]</p>
             </div>
             <button className={btnStyle} onClick={handleClick}>Проверить</button>
-            <p className={translationStyle}>{translation}</p>    
+            <p className={translationStyle}>{russian}</p>    
         </div>
     )
 };
 
 Card.propTypes= {
-    word: PropTypes.string,
+    english: PropTypes.string,
     transcription: PropTypes.string,
-    translation: PropTypes.string,
+    russian: PropTypes.string,
     index:PropTypes.num,
     //isActive: PropTypes.bool,
     //onChangeInComponent: PropTypes.func

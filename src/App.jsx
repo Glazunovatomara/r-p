@@ -6,6 +6,7 @@ import CardPage from './components/CardPage/CardPage'
 import WordsAdd from './components/WordsAdd/WordsAdd'
 import WordsList from './components/Words/Words'
 import Words from './components/Words/Words'
+import ErrorPage from './components/ErrorPage/ErrorPage'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <WordsList/>
     <Words/>
     <CardPage/>
+    <ErrorPage/>
     <Footer/>
     </>
   )

@@ -41,6 +41,10 @@ p {
 .btn_delete svg {
     fill: #ff4b4b;
 }
-.btn_delete:hover svg {
+.btn_delete:hover svg,
+.btn_edit:hover svg {
     fill: #ffffffd9;
+}
+.btn_edit svg {
+    fill: #4bb4ff;
 }
