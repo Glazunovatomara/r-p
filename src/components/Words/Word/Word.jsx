@@ -1,4 +1,5 @@
 import styles from "./word.module.css";
+import { useState } from "react";
 import PropTypes from "prop-types"
 
 const Word = (props) => {
@@ -9,19 +10,45 @@ let i = 1
     console.log(english,transcription,russian,tag)
     console.log(english)
 
+    const [state,setChange] = useState('false')
+
+    const editClick = () => {
+        setChange('true')
+    }
+
+    const saveClick = () => {
+        setChange('false')
+    }
+    
+    let textArrea = `${styles.word}`;
+    let inputArrea = `${styles.invisible}`;
+
+    console.log(state)
+
+    if(state === 'true') {
+        textArrea = `${styles.invisible}`;
+        inputArrea = `${styles.word}`
+    }
+
 //}
     return(
         <div className={styles.word_arrea}>
             <p className={styles.number}>{i++}</p>
-            <div className={styles.word}>
-                <p className={styles.english}>{english}</p>
-                <p className={styles.transcription}>{transcription}</p>
-                <p className={styles.russian}>{russian}</p>
-                <p className={styles.tag}>{tag}</p>
+            <div className={textArrea}>
+                <p className={styles.english}>english</p>
+                <p className={styles.transcription}>transcription</p>
+                <p className={styles.russian}>russian</p>
+                <p className={styles.tag}>tag</p>
+            </div>
+            <div className={inputArrea}>
+                <input type="text" className={styles.input} value='english'/>
+                <input type="text" className={styles.input} value='transcription'/>
+                <input type="text" className={styles.input} value='russian'/>
+                <input type="text" className={styles.input} value='tag'/>
             </div>
             <div className={styles.btn_arrea}>
-                <button>Сохранить</button>
-                <button className={styles.btn_edit}>
+                <button onClick={saveClick}>Сохранить</button>
+                <button className={styles.btn_edit} onClick={editClick}>
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="17" width="3" height="3" />
                         <rect x="4" y="11" width="1" height="7" />

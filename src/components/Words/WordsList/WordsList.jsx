@@ -1,4 +1,4 @@
-import array from "../Array/array";
+import array from "../../Array/array";
 import Word from "../Word/Word";
 
 const WordsList = () => {

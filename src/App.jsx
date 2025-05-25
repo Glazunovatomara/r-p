@@ -3,8 +3,8 @@ import Header from './components/Header/Header'
 import Home from './components/HomePage/Home'
 import Footer from './components/Footer/Footer'
 import CardPage from './components/Cards/CardPage/CardPage'
-import WordsAdd from './components/WordsAdd/WordsAdd'
-import Word from './components/Word/Word'
+import WordsAdd from './components/Words/WordsAdd/WordsAdd'
+import Word from './components/Words/Word/Word'
 import ErrorPage from './components/ErrorPage/ErrorPage'
 
 

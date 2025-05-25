@@ -3,6 +3,7 @@
     justify-content: space-between;
     color: #4bb4ff;
     border: 2px solid #4bb4ff;
+    width: 752px;
 }
 .number {
     border-right:2px solid #4bb4ff;
@@ -14,8 +15,20 @@
 .word {
     display: flex;
     width: 100%;
+    gap: 10px;
     justify-content: space-around;
+    padding: 10px;
     border-right:2px solid #4bb4ff;
+}
+.input {
+    border-radius: 8px;
+    border: 2px solid #4bb4ff;
+    padding: 0.6em 1.2em;
+    color: #4bb4ff;
+    caret-color: #4bb4ff;
+}
+.invisible {
+    display: none;
 }
 .btn_arrea {
     display: flex;
