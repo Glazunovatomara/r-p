@@ -14,7 +14,9 @@
     color: #4bb4ff;
 }
 .transcription {
+    width: 160px;
     color: #4bb4ffb7;
+
 }
 .invisibility {
     display: none;

@@ -2,10 +2,9 @@ import './App.css'
 import Header from './components/Header/Header'
 import Home from './components/HomePage/Home'
 import Footer from './components/Footer/Footer'
-import CardPage from './components/CardPage/CardPage'
+import CardPage from './components/Cards/CardPage/CardPage'
 import WordsAdd from './components/WordsAdd/WordsAdd'
-import WordsList from './components/Words/Words'
-import Words from './components/Words/Words'
+import Word from './components/Word/Word'
 import ErrorPage from './components/ErrorPage/ErrorPage'
 
 
@@ -16,8 +15,7 @@ function App() {
     <Header/>
     <Home/>
     <WordsAdd/>
-    <WordsList/>
-    <Words/>
+    <Word/>
     <CardPage/>
     <ErrorPage/>
     <Footer/>

@@ -1,5 +1,5 @@
 import Card from "../Card/Card";
-import array from "../Array/array";
+import array from "../../Array/array";
 //import { useState } from "react";
 
 const CardList = () => {

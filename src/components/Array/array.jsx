@@ -2,17 +2,20 @@ const array = [
     {
         english:'слово 1',
         transcription:' транскрипция 1',
-        russian:'перевод 1'
+        russian:'перевод 1',
+        "tags":''
     },
     {
         english:'слово 2',
         transcription:'транскрипция 2',
-        russian:'перевод 2'
+        russian:'перевод 2',
+        "tags":'',
     },
     {
         english:'слово 3',
         transcription:'транскрипция 3',
-        russian:'перевод 3'
+        russian:'перевод 3',
+        "tags":'',
     },
     {
         "id": "33198",

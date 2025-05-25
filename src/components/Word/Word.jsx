@@ -1,16 +1,23 @@
-import styles from "./words.module.css";
+import styles from "./word.module.css";
 import PropTypes from "prop-types"
 
-const Words = (props) => {
-    //const {word,transcription,translation,index} = props;
+const Word = (props) => {
+    
 let i = 1
+//render() {
+    const {english,transcription,russian,tag} = props;
+    console.log(english,transcription,russian,tag)
+    console.log(english)
+
+//}
     return(
         <div className={styles.word_arrea}>
             <p className={styles.number}>{i++}</p>
             <div className={styles.word}>
-                <p className={styles}>word</p>
-                <p className={styles}>transcription</p>
-                <p className={styles}>translation</p>
+                <p className={styles.english}>{english}</p>
+                <p className={styles.transcription}>{transcription}</p>
+                <p className={styles.russian}>{russian}</p>
+                <p className={styles.tag}>{tag}</p>
             </div>
             <div className={styles.btn_arrea}>
                 <button>Сохранить</button>
@@ -71,11 +78,12 @@ let i = 1
     )
 }
 
-export default Words
-
-Words.propTypes= {
-    word: PropTypes.string,
+Word.propTypes= {
+    english: PropTypes.string,
     transcription: PropTypes.string,
-    translation: PropTypes.string,
-    index:PropTypes.num
+    russian: PropTypes.string,
+    //index:PropTypes.num,
+    tag:PropTypes.string,
 };
+
+export default Word;

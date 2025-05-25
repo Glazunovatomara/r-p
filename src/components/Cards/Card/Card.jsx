@@ -3,14 +3,14 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 
 const Card = (props) => {
-    const {english,transcription,russian,index} = props;
+    const {english,transcription,russian} = props;
 
-    console.log(english)
+    //console.log(english)
     const [state,setChange] = useState('false')
 
     const handleClick = () =>{
         setChange('true')
-        console.log(index)
+        //console.log(index)
     }
 
     let btnStyle = `${styles.btn}`
@@ -38,7 +38,7 @@ Card.propTypes= {
     english: PropTypes.string,
     transcription: PropTypes.string,
     russian: PropTypes.string,
-    index:PropTypes.num,
+    //index:PropTypes.num,
     //isActive: PropTypes.bool,
     //onChangeInComponent: PropTypes.func
 };

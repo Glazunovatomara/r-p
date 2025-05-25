@@ -6,6 +6,7 @@ const AddWords = () => {
             <input type="text" className={styles.input} placeholder="новое слово"/>
             <input type="text" className={styles.input} placeholder="транскрипция"/>
             <input type="text" className={styles.input} placeholder="перевод"/>
+            <input type="text" className={styles.input} placeholder="тег"/>
             <button>Добавить</button>
         </div>
     )
