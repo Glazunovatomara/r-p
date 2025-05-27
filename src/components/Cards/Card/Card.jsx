@@ -16,7 +16,7 @@ const Card = (props) => {
     let btnStyle = `${styles.btn}`
     let translationStyle = `${styles.invisibility}`
 
-    console.log (state)
+    //console.log (state)
     if (state != 'false') {
         btnStyle = `${styles.invisibility}`
         translationStyle = `${styles.translation}`

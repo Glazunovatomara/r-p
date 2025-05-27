@@ -1,12 +1,11 @@
 import styles from "./word.module.css";
 import { useState } from "react";
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 
 const Word = (props) => {
+    const {english,transcription,russian,tag} = props;
     
 let i = 1
-//render() {
-    const {english,transcription,russian,tag} = props;
     console.log(english,transcription,russian,tag)
     console.log(english)
 
@@ -19,32 +18,41 @@ let i = 1
     const saveClick = () => {
         setChange('false')
     }
-    
+
+    const deleteClick = () => {
+        console.log('delete')
+    }
+
     let textArrea = `${styles.word}`;
     let inputArrea = `${styles.invisible}`;
 
-    console.log(state)
+    //console.log(state)
 
     if(state === 'true') {
         textArrea = `${styles.invisible}`;
         inputArrea = `${styles.word}`
     }
 
-//}
+    const handleInputChange = () => {}
+
     return(
         <div className={styles.word_arrea}>
             <p className={styles.number}>{i++}</p>
             <div className={textArrea}>
-                <p className={styles.english}>english</p>
-                <p className={styles.transcription}>transcription</p>
-                <p className={styles.russian}>russian</p>
-                <p className={styles.tag}>tag</p>
+                <p className={styles.english}>{english}</p>
+                <p className={styles.transcription}>{transcription}</p>
+                <p className={styles.russian}>{russian}</p>
+                <p className={styles.tag}>{tag}</p>
             </div>
             <div className={inputArrea}>
-                <input type="text" className={styles.input} value='english'/>
-                <input type="text" className={styles.input} value='transcription'/>
-                <input type="text" className={styles.input} value='russian'/>
-                <input type="text" className={styles.input} value='tag'/>
+                <input type="text" className={styles.input} value='english' onChange={handleInputChange}
+                />
+                <input type="text" className={styles.input} value='transcription' onChange={handleInputChange}
+                />
+                <input type="text" className={styles.input} value='russian' onChange={handleInputChange}
+                />
+                <input type="text" className={styles.input} value='tag' onChange={handleInputChange}
+                />
             </div>
             <div className={styles.btn_arrea}>
                 <button onClick={saveClick}>Сохранить</button>
@@ -80,7 +88,7 @@ let i = 1
                         <rect x="17" y="6" width="1" height="1" />
                     </svg>
                 </button>
-                <button className={styles.btn_delete}>
+                <button className={styles.btn_delete} onClick={deleteClick}>
                     <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="1" y="2" width="16" height="1" />
                             <rect x="3" y="1" width="12" height="1" />

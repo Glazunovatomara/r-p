@@ -1,20 +1,24 @@
-import array from "../../Array/array";
 import Word from "../Word/Word";
+import array from "../../Array/array";
+
 
 const WordsList = () => {
-    const NewArr = array.map((el, index) => {
+    let newArray = array.map((el,index) => {
+
         return (
             <Word
                 english = {el.english}
                 transcription = {el.transcription}
                 russian = {el.russian}
-                tag = {el.tag}
-                //index = {index}
+                tag = {el.tags}
+                index = {index}
                 key = {index}
             />
         )
     });
 
-    return <>{NewArr}</>
+    return <>{newArray}</>;
+
 }
+
 export default WordsList;
