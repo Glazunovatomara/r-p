@@ -5,32 +5,22 @@ import PropTypes from "prop-types";
 const Word = (props) => {
     const {english,transcription,russian,tag} = props;
     
-let i = 1
+let i = 1//исправить
     console.log(english,transcription,russian,tag)
     console.log(english)
 
-    const [state,setChange] = useState('false')
+    const [state,setChange] = useState(false)
 
     const editClick = () => {
-        setChange('true')
+        setChange(true)
     }
 
     const saveClick = () => {
-        setChange('false')
+        setChange(false)
     }
 
     const deleteClick = () => {
         console.log('delete')
-    }
-
-    let textArrea = `${styles.word}`;
-    let inputArrea = `${styles.invisible}`;
-
-    //console.log(state)
-
-    if(state === 'true') {
-        textArrea = `${styles.invisible}`;
-        inputArrea = `${styles.word}`
     }
 
     const handleInputChange = () => {}
@@ -38,22 +28,20 @@ let i = 1
     return(
         <div className={styles.word_arrea}>
             <p className={styles.number}>{i++}</p>
-            <div className={textArrea}>
+            {state 
+            ?<div className={styles.word}>
+                <input type="text" className={styles.input} value='english' onChange={handleInputChange}/>
+                <input type="text" className={styles.input} value='transcription' onChange={handleInputChange}/>
+                <input type="text" className={styles.input} value='russian' onChange={handleInputChange}/>
+                <input type="text" className={styles.input} value='tag' onChange={handleInputChange}/>
+            </div>
+            :<div className={styles.word}>
                 <p className={styles.english}>{english}</p>
                 <p className={styles.transcription}>{transcription}</p>
                 <p className={styles.russian}>{russian}</p>
                 <p className={styles.tag}>{tag}</p>
             </div>
-            <div className={inputArrea}>
-                <input type="text" className={styles.input} value='english' onChange={handleInputChange}
-                />
-                <input type="text" className={styles.input} value='transcription' onChange={handleInputChange}
-                />
-                <input type="text" className={styles.input} value='russian' onChange={handleInputChange}
-                />
-                <input type="text" className={styles.input} value='tag' onChange={handleInputChange}
-                />
-            </div>
+            }
             <div className={styles.btn_arrea}>
                 <button onClick={saveClick}>Сохранить</button>
                 <button className={styles.btn_edit} onClick={editClick}>

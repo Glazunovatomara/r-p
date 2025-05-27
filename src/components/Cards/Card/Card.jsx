@@ -6,20 +6,11 @@ const Card = (props) => {
     const {english,transcription,russian} = props;
 
     //console.log(english)
-    const [state,setChange] = useState('false')
+    const [state,setChange] = useState(false)
 
     const handleClick = () =>{
-        setChange('true')
+        setChange(true)
         //console.log(index)
-    }
-
-    let btnStyle = `${styles.btn}`
-    let translationStyle = `${styles.invisibility}`
-
-    //console.log (state)
-    if (state != 'false') {
-        btnStyle = `${styles.invisibility}`
-        translationStyle = `${styles.translation}`
     }
 
     return (
@@ -28,8 +19,8 @@ const Card = (props) => {
                 <h2 className={styles.subtitle}>{english}</h2>
                 <p className={styles.transcription}>[{transcription}]</p>
             </div>
-            <button className={btnStyle} onClick={handleClick}>Проверить</button>
-            <p className={translationStyle}>{russian}</p>    
+            {state ?(<p className={styles.translation}>{russian}</p>)
+            :(<button className={styles.btn} onClick={handleClick}>Проверить</button>)} 
         </div>
     )
 };
