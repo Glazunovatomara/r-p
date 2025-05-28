@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const Word = (props) => {
     const {english,transcription,russian,tag} = props;
     
-let i = 1//исправить
+
     console.log(english,transcription,russian,tag)
     console.log(english)
 
@@ -24,26 +24,29 @@ let i = 1//исправить
     }
 
     const handleInputChange = () => {}
-
+console.log(state)
     return(
-        <div className={styles.word_arrea}>
-            <p className={styles.number}>{i++}</p>
+        <div className={styles.wordArrea}>
+            <p className={styles.number}>1</p>
             {state 
-            ?<div className={styles.word}>
+            ?(<div className={styles.word}>
                 <input type="text" className={styles.input} value='english' onChange={handleInputChange}/>
                 <input type="text" className={styles.input} value='transcription' onChange={handleInputChange}/>
                 <input type="text" className={styles.input} value='russian' onChange={handleInputChange}/>
                 <input type="text" className={styles.input} value='tag' onChange={handleInputChange}/>
-            </div>
-            :<div className={styles.word}>
+            </div>)
+            :(<div className={styles.word}>
                 <p className={styles.english}>{english}</p>
                 <p className={styles.transcription}>{transcription}</p>
                 <p className={styles.russian}>{russian}</p>
                 <p className={styles.tag}>{tag}</p>
-            </div>
+            </div>)
             }
-            <div className={styles.btn_arrea}>
-                <button onClick={saveClick}>Сохранить</button>
+            {state
+                ?<div className={styles.btn_arrea}>
+                    <button onClick={saveClick}>Сохранить</button>
+                </div>
+                :<div className={styles.btn_arrea}>
                 <button className={styles.btn_edit} onClick={editClick}>
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="17" width="3" height="3" />
@@ -97,6 +100,7 @@ let i = 1//исправить
                     </svg>
                 </button>
             </div>
+            }
         </div>
     )
 }

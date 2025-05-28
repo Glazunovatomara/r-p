@@ -1,11 +1,8 @@
 import Card from "../Card/Card";
 import array from "../../Array/array";
-//import { useState } from "react";
 
 const CardList = () => {
-    //const [state,setChange] = useState('false')
-//console.log(array.length)
-    let newArr = array.map((el,index) => {
+    let newArray = array.map((el,index) => {
 
         return (
             <Card
@@ -18,7 +15,7 @@ const CardList = () => {
         )
     });
 
-    return <>{newArr}</>;
+    return <>{newArray}</>;
 
 }
 
