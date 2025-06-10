@@ -1,9 +1,9 @@
 import Word from "../Word/Word";
-import array from "../../Array/array";
+import arrayo from "../../Array/arrayo";
 
 
 const WordsList = () => {
-    let newArray = array.map((el,index) => {
+    let newArray = arrayo.map((el,index) => {
 
         return (
             <Word
@@ -16,9 +16,7 @@ const WordsList = () => {
             />
         )
     });
-
     return <>{newArray}</>;
-
 }
 
 export default WordsList;

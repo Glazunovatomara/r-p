@@ -38,26 +38,34 @@
 p {
     align-content: center;
 }
-.btn_delete {
+.btn_delete,
+.btn_cancel {
     border:2px solid #ff4b4b;
 }
-.btn_delete:hover {
+.btn_delete:hover,
+.btn_cancel:hover {
     border-color: #ffffff51;
     background-color: #ff4b4b;
 }
 
 .btn_delete:focus,
-.btn_delete:focus-visible {
+.btn_delete:focus-visible,
+.btn_cancel:focus,
+.btn_cancel:focus-visible  {
     border: 4px auto #ff4b4b;
 }
 
-.btn_delete svg {
+.btn_delete svg,
+.btn_cancel svg {
     fill: #ff4b4b;
 }
 .btn_delete:hover svg,
-.btn_edit:hover svg {
+.btn_edit:hover svg,
+.btn_save:hover svg,
+.btn_cancel:hover svg {
     fill: #ffffffd9;
 }
-.btn_edit svg {
+.btn_edit svg,
+.btn_save svg {
     fill: #4bb4ff;
 }

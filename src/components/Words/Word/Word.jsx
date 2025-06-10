@@ -22,6 +22,10 @@ const Word = (props) => {
     const deleteClick = () => {
         console.log('delete')
     }
+    const cancelClick = () => {
+
+        setChange(false)
+    }
 
     const handleInputChange = () => {}
 console.log(state)
@@ -44,7 +48,21 @@ console.log(state)
             }
             {state
                 ?<div className={styles.btn_arrea}>
-                    <button onClick={saveClick}>Сохранить</button>
+                    <button className={styles.btn_save} onClick={saveClick}>
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 9H12V10H13V11V12H12V13H10V12H9V11V10H10V9Z"/>
+                            <path d="M0 12L7 12V14H8V15H10V16H12V15H14V14H15V12H16V10H15V8H14V7H12V6H10V7H8V8H7V10H6V12H0V8H1V6H2V4H4V2H6V1H8V0H14V1H16V2H18V4H20V6H21V8H22V14H21V16H20V18H18V20H16V21H14V22H8V21H6V20H4V18H2V16H1V14L0 14V12Z"/>
+                        </svg>
+                    </button>
+                    <button className={styles.btn_cancel} onClick={cancelClick}>
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.01328e-06 18H3V15H6V12H9V9H6V6H3V3H4.76837e-07V0H3V3H6V6H9L9 9H12V6H15V3H18V0H21V3H18V6H15V9H12V12H15V15H18V18H21V21H18V18H15V15H12L12 12H9V15H6V18H3V21H4.76837e-07L1.01328e-06 18Z"/>
+                            <path d="M9 18H12V19H14V21H12H9H7V19H9V18Z" fill="#D50404"/>
+                            <path d="M18 9H19V7H21V9V12V14H19V12H18V9Z" fill="#D50404"/>
+                            <path d="M9 0H12H14V2H12V3H9V2H7V0H9Z" fill="#D50404"/>
+                            <path d="M0 9V7H2V9H3V12H2V14H0V12V9Z" fill="#D50404"/>
+                        </svg>
+                    </button>
                 </div>
                 :<div className={styles.btn_arrea}>
                 <button className={styles.btn_edit} onClick={editClick}>

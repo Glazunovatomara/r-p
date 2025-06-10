@@ -1,4 +1,4 @@
-const array1 = [
+const arrayo = [
     {
         english:'слово 1',
         transcription:' транскрипция 1',
@@ -43,4 +43,4 @@ const array1 = [
       }
 ]
 
-export default array1
+export default arrayo
