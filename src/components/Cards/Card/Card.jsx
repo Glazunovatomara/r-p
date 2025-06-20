@@ -1,6 +1,7 @@
 import styles from './card.module.css';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import Button from '../../Button/button';
 
 const Card = (props) => {
     const {english,transcription,russian} = props;
@@ -20,7 +21,8 @@ const Card = (props) => {
                 <p className={styles.transcription}>[{transcription}]</p>
             </div>
             {state ?(<p className={styles.translation}>{russian}</p>)
-            :(<button className={styles.btn} onClick={handleClick}>Проверить</button>)} 
+            :(<Button onClick={handleClick} nameButton={'Проверить'} typeButton = {'check'}/>)
+            }
         </div>
     )
 };

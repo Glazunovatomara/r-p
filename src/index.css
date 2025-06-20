@@ -21,7 +21,7 @@ body {
   min-height: 100vh;
 }
 
-button {
+/* button {
   border-radius: 8px;
   border: 2px solid #4bb4ff;
   padding: 0.6em 1.2em;
@@ -43,7 +43,7 @@ button:hover {
 button:focus,
 button:focus-visible {
     border: 4px auto #4bb4ff;
-}
+} */
 
 
 @media (prefers-color-scheme: light) {

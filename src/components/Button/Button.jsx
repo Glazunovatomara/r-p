@@ -1,10 +1,13 @@
 import styles from './button.module.css';
 
-const Button = (props) => {
-    const [name, clas] = props;
+const ButtonTypes = [ 'save', 'cancel', 'edit', 'delete']
+
+const Button = ({onClick, nameButton, typeButton}) => {
+    const classButton = ButtonTypes.includes 
+    ? `button-${typeButton}`: 'button'
 
     return(
-        <button className={clas}>{name}</button>
+        <button className={styles[classButton]} onClick={onClick}>{nameButton}</button>
     )
 }
 export default Button;
