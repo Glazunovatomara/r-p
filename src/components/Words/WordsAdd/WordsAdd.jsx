@@ -1,3 +1,4 @@
+import Button from "../../Button/button";
 import styles from "./WordsAdd.module.css"
 
 const AddWords = () => {
@@ -16,7 +17,7 @@ const AddWords = () => {
             <input type="text" className={styles.input} id="transcriptionInput" placeholder="транскрипция"/>
             <input type="text" className={styles.input} id="russianInput" placeholder="перевод"/>
             <input type="text" className={styles.input} id="tagInput" placeholder="тег"/>
-            <button onClick={addWord}>Добавить</button>
+            <Button onClick={addWord} nameButton={'Добавить'}/>
         </div>
     )
 }

@@ -10,14 +10,46 @@ button {
     cursor: pointer;
     transition: border-color 0.25s;
     
-  }
-  button:hover {
+}
+button:hover {
     border-color: #ffffff51;
     background-color: #4bb4ff;
     color: #ffffff;
-  }
+}
   
-  button:focus,
-  button:focus-visible {
+button:focus,
+button:focus-visible {
       border: 4px auto #4bb4ff;
-  }
+}
+
+.button-delete,
+.button-cancel {
+    border:2px solid #ff4b4b;
+}
+.button-delete:hover,
+.button-cancel:hover {
+    border-color: #ffffff51;
+    background-color: #ff4b4b;
+}
+
+.button-delete:focus,
+.button-delete:focus-visible,
+.button-cancel:focus,
+.button-cancel:focus-visible  {
+    border: 4px auto #ff4b4b;
+}
+
+.button-delete svg,
+.button-cancel svg {
+    fill: #ff4b4b;
+}
+.button-delete:hover svg,
+.button-edit:hover svg,
+.button-save:hover svg,
+.button-cancel:hover svg {
+    fill: #ffffffd9;
+}
+.button-edit svg,
+.button-save svg {
+    fill: #4bb4ff;
+}
